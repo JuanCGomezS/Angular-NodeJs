@@ -92,7 +92,7 @@ export class AdministradorUsuarioComponent implements OnInit {
 
   editarUsuario(usuario: any) {
     this.accion = 'Editar';
-    this.id = usuario?.id_u || usuario?.id;
+    this.id = usuario.id_u;
     if (this.debug) console.log(this.id);
 
     this.form.patchValue({
